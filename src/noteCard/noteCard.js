@@ -5,10 +5,10 @@ import './noteCard.css'
 function NoteCard(props){
   
     return ( 
-      <div className="noteCard">
-        <h1>{props.name}</h1>
+      <li className="noteCard">
+        <h2>{props.name}</h2>
         <footer>{props.modified}</footer>
-      </div>
+      </li>
    )
   }
 

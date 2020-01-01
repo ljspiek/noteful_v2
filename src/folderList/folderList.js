@@ -4,7 +4,7 @@ import FolderCard from '../folderListCard/folderCard'
 function FolderList(props){
      
     const folderNames=props.files.folders;
-    console.log(folderNames[0].name); 
+    // console.log(folderNames[0].name); 
     
     return ( 
       <div className="folderList">

@@ -6,7 +6,7 @@ import NoteList from '../noteCardList/noteList';
 import FolderList from '../folderList/folderList';
 import '../App/App.css';
 
-console.log(data);
+// console.log(data);
 
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 import './folderCard.css'
 
 function FolderCard(props){
-  console.log(props)
+  
   
     return ( 
       <li className="folderCard">

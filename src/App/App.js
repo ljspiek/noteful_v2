@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import {Route, Link} from 'react-router-dom';
 import data from '../dummy-store';
 import NotefullHome from '../notefullHome/notefullHome';
 import NoteList from '../noteCardList/noteList';
@@ -11,6 +11,13 @@ import '../App/App.css';
 
 
 class App extends Component{
+  state= {
+    notes: [],
+    folders: [],
+  }
+
+
+
   render(){
 
     //STATE
@@ -23,8 +30,8 @@ class App extends Component{
     return ( <div>
               <NotefullHome name="Noteful Home"/>
                 <section className="grid-container">
-                  <FolderList files={data} />
-                  <NoteList files={data}/>
+                  <FolderList className="folder-area" files={data} />
+                  <NoteList className="note-area"files={data}/>
                 </section>
              </div>)
 

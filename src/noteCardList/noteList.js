@@ -3,12 +3,11 @@ import NoteCard from '../noteCard/noteCard'
 
 function NoteList(props){
     const notes=props.files.notes;
-    console.log(notes[0].name); 
+   
     return (
       <section className="noteList"> 
         <ul> 
-        <NoteCard name={props.files.notes[0].name} modified={props.files.notes[0].modified} />
-        <NoteCard name={props.files.notes[0].name} modified={props.files.notes[0].modified} />
+          {notes.map(note=><NoteCard key={note.id} name={note.name} modified={note.modified} />)}
         </ul>
       </section>
    )

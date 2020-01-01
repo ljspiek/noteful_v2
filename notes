@@ -1,0 +1,25 @@
+Routes
+-Main View 
+-Folder View
+  - make sure NoteFul is active
+-Note View
+
+Components -
+-NoteFulHome - render in header
+
+-Main View
+	- NoteList -- the note container
+		- NoteCard
+			- Delete Note 
+	- Add Note
+
+	-FolderList
+		-FolderCard
+		-Add Folder - not required for the moment 
+
+
+- NoteView
+ - goBackCard
+ - displayCard 
+
+  

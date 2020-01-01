@@ -22,9 +22,10 @@ class App extends Component{
     //MAIN RENDER
     return ( <div>
               <NotefullHome name="Noteful Home"/>
-              <FolderList files={data} />
-              <NoteList files={data}/>
-          
+                <section className="grid-container">
+                  <FolderList files={data} />
+                  <NoteList files={data}/>
+                </section>
              </div>)
 
     // return (<div>

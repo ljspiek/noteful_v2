@@ -5,5 +5,6 @@
     box-shadow:0 2px 2 px #ccc;
     width: 200 px;
     padding: 20 px;
+    min-width: 700px;
     
   }

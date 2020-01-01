@@ -2,9 +2,9 @@ import React,{Component} from 'react';
 
 import data from '../dummy-store';
 import NotefullHome from '../notefullHome/notefullHome';
+import NoteList from '../noteCardList/noteList';
 
-
-console.log(data);
+console.log();
 
 
 
@@ -12,7 +12,6 @@ class App extends Component{
   render(){
 
     //STATE
-
     // state ={};
     
     //CREATE ROUTES
@@ -21,7 +20,9 @@ class App extends Component{
     //MAIN RENDER
     return ( <div>
       <NotefullHome name="Noteful Home"/>
+      <NoteList/>
     </div>)
+
     // return (<div>
     // {/* FOLDER NAVIGATION */}  
     // {/* HEADER FOR NOTEFUL HOME  */}

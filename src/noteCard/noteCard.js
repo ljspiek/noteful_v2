@@ -1,16 +1,16 @@
-import React,{Component} from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import './noteCard.css'
 
 
-class ControlBar extends Component {
-    render() {
-      return (
-        <div className="noteCard">
-            
-        </div>
-      );
-    }
-  }
+function NoteCard(props){
   
-  export default ControlBar;
+    return ( 
+      <div className="noteCard">
+        <h1>{props.name}</h1>
+        <footer>{props.modified}</footer>
+      </div>
+   )
+  }
+
+export default NoteCard; 
+

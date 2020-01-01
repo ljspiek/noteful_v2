@@ -2,11 +2,12 @@ import React from 'react';
 import './folderCard.css'
 
 function FolderCard(props){
+  console.log(props)
   
     return ( 
-      <div className="folderCard">
-        <h1>{props.name}</h1>
-      </div>
+      <li className="folderCard">
+        <h2>{props.name}</h2>
+      </li>
    )
   }
 

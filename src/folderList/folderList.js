@@ -4,12 +4,18 @@ import FolderCard from '../folderListCard/folderCard'
 function FolderList(props){
      
     const folderNames=props.files.folders;
-    console.log(folderNames[0].name); 
+    console.log(folderNames); 
     
     return ( 
-      <div className="folderList">
-       <FolderCard name={props.files.folders[0].name}/>
-      </div>
+      <section className="folderList">
+        <ul className="folderList">
+          {folderNames.map(folders =>
+           <FolderCard 
+           key={folders.id}
+           name={folders.name}/> )}
+        </ul>
+       
+      </section>
    )
   }
 

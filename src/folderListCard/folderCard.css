@@ -1,0 +1,10 @@
+.folderCard{
+        display:inline-block;
+        margin:10px;
+        border:5px solid black;
+        box-shadow:0 2px 2 px #ccc;
+        width: 200 px;
+        padding: 20 px;
+        min-width: 200px;
+        
+}

@@ -1,14 +1,14 @@
 import React from 'react';
 import NoteCard from '../noteCard/noteCard'
 
-
-import data from '../dummy-store';
-
 function NoteList(props){
   
+    const notes=props.files.notes;
+    console.log(notes); 
+    
     return ( 
       <div className="noteList">
-       <NoteCard name="Note1" modified="01012020"/>
+       <NoteCard name={props.files.notes[0].name} modified={props.files.notes[0].modified}/>
       </div>
    )
   }

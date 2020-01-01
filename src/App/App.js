@@ -3,8 +3,10 @@ import React,{Component} from 'react';
 import data from '../dummy-store';
 import NotefullHome from '../notefullHome/notefullHome';
 import NoteList from '../noteCardList/noteList';
+import FolderList from '../folderList/folderList';
+import '../App/App.css';
 
-console.log();
+console.log(data);
 
 
 
@@ -19,9 +21,11 @@ class App extends Component{
    
     //MAIN RENDER
     return ( <div>
-      <NotefullHome name="Noteful Home"/>
-      <NoteList/>
-    </div>)
+              <NotefullHome name="Noteful Home"/>
+              <FolderList files={data} />
+              <NoteList files={data}/>
+          
+             </div>)
 
     // return (<div>
     // {/* FOLDER NAVIGATION */}  

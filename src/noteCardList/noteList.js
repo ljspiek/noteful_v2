@@ -4,11 +4,12 @@ import NoteCardButton from '../noteCardButton/noteCardButton'
 
 
 function NoteList(props){
-    const notes=props.files.notes;
+    const notes=props.notes;
     console.log(notes)
    
     return (
-      <section className="noteList"> 
+      <section className="noteList">
+        <h2>Notes</h2> 
         <ul> 
           {notes.map(note=>
             <NoteCard 

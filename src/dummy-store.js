@@ -1,5 +1,5 @@
 
-const data =  {
+export default {
   "folders": [
     {
       "id": "b0715efe-ffaf-11e8-8eb2-f2801f1b9fd1",
@@ -116,4 +116,3 @@ const data =  {
   ]
 }
 
-export default data;
